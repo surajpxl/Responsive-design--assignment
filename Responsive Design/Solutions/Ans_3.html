@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Homepage</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f0f2f5;
+      }
+
+      nav {
+        height: 60px;
+        background-color: #2b3137;
+        display: flex;
+        align-items: center;
+        padding: 0 15px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+
+      .nav-container {
+        max-width: 1200px;
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .logo {
+        width: 55px;
+      }
+
+      .nav-links {
+        display: flex;
+        gap: 20px;
+      }
+
+      .nav-links a {
+        text-decoration: none;
+        color: #ffffff;
+        font-size: 16px;
+        transition: color 0.3s ease;
+      }
+
+      .nav-links a:hover {
+        color: #76c7c0;
+      }
+
+      .cta-btn {
+        padding: 10px 25px;
+        background-color: #0095f6;
+        color: #ffffff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 14px;
+        transition: background-color 0.3s ease;
+      }
+
+      .cta-btn:hover {
+        background-color: #007ac1;
+      }
+
+      .hero {
+        max-width: 1200px;
+        width: 100%;
+        margin: 40px auto;
+        padding: 0 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .hero-content {
+        max-width: 650px;
+        text-align: center;
+        margin-bottom: 30px;
+      }
+
+      .hero-content h2 {
+        font-size: 28px;
+        margin-bottom: 10px;
+        color: #333333;
+      }
+
+      .hero-content h1 {
+        font-size: 56px;
+        margin-bottom: 20px;
+        color: #007bbd;
+      }
+
+      .hero-content h3 {
+        font-size: 22px;
+        margin: 20px 0;
+        color: #007bbd;
+      }
+
+      .hero-content p {
+        font-size: 18px;
+        line-height: 1.6;
+        color: #555555;
+        margin-bottom: 40px;
+      }
+
+      .hero-content img {
+        width: 70%;
+        margin-bottom: 25px;
+      }
+
+      .hero-video iframe {
+        width: 100%;
+        max-width: 950px;
+        height: 400px;
+        border-radius: 10px;
+        border: none;
+        margin-left: -50px;
+      }
+
+      .info-section {
+        background-color: #1d1d1d;
+        color: #ffffff;
+        padding: 80px 20px;
+        text-align: center;
+      }
+
+      .info-section h2 {
+        font-size: 36px;
+        margin-bottom: 20px;
+      }
+
+      .info-section p {
+        font-size: 22px;
+        margin: 5px 0;
+      }
+
+      @media screen and (min-width: 768px) {
+        .hero {
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+        }
+
+        .hero-content {
+          text-align: left;
+          margin-right: 30px;
+        }
+
+        .hero-content img {
+          width: 100%;
+        }
+
+        .info-section h2 {
+          font-size: 50px;
+        }
+
+        .info-section p {
+          font-size: 26px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div class="nav-container">
+        <img
+          class="logo"
+          src="https://via.placeholder.com/55"
+          alt="Company Logo"
+        />
+        <div class="nav-links">
+          <a href="#">Home</a>
+          <a href="#">Services</a>
+          <a href="#">About</a>
+          <a href="#">Contact</a>
+        </div>
+        <button class="cta-btn">Sign Up</button>
+      </div>
+    </nav>
+
+    <main class="hero">
+      <div class="hero-content">
+        <h2>Discover the Future of</h2>
+        <h1>Metal Credit Cards</h1>
+        <h3>Our Trusted Partners:</h3>
+        <img style="width: 50%;" src="https://cdn.logojoy.com/wp-content/uploads/2018/07/22160732/Desktop-HD-Copy-2-600x389.png" alt="Partners" />
+        <p>
+          Experience the innovation of India’s leading metal credit card,
+          engineered with advanced technology, transparency, and full control in
+          your hands.
+        </p>
+      </div>
+      <div class="hero-video">
+        <iframe
+          src="https://media.istockphoto.com/id/1266309021/video/drone-shot-of-the-indian-tricolour-flag-fluttering-wide-shot.mp4?s=mp4-640x640-is&k=20&c=BmvaqTcm1W_RtAU3VwqaoKOKV27hqEUO-azfwskfQoE="
+          title="Promotional Video"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </main>
+
+    <section class="info-section">
+      <h2>No Hidden Fees</h2>
+      <p>Zero Joining Fees.</p>
+      <p>No Annual Charges.</p>
+      <p>Free Rewards Redemption.</p>
+    </section>
+  </body>
+</html>

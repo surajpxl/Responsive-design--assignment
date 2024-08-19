@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <title>Welcome Page</title>
+
+    <style>
+      .material-symbols-outlined {
+        font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
+        color: #f5f5f5;
+      }
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #2e3b4e;
+        color: #ececec;
+        margin: 0;
+        padding: 0;
+      }
+
+      nav {
+        height: 60px;
+        background-color: #1c252f;
+        display: flex;
+        align-items: center;
+        padding: 0 20px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+
+      .nav-container {
+        max-width: 1300px;
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .nav-logo img {
+        width: 55px;
+      }
+
+      .nav-links {
+        display: flex;
+        gap: 20px;
+      }
+
+      .nav-links a {
+        color: #ececec;
+        text-decoration: none;
+        font-size: 16px;
+        transition: color 0.3s ease;
+      }
+
+      .nav-links a:hover {
+        color: #4ab3f4;
+      }
+
+      .cta-btn {
+        padding: 10px 20px;
+        background-color: #0066cc;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        transition: background-color 0.3s ease;
+      }
+
+      .cta-btn:hover {
+        background-color: #004a99;
+      }
+
+      .hero-section {
+        max-width: 1300px;
+        width: 100%;
+        margin: 50px auto;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+      }
+
+      .hero-content {
+        margin-top: 20px;
+      }
+
+      .hero-content h3 {
+        font-size: 28px;
+        margin-bottom: 10px;
+      }
+
+      .hero-content h1 {
+        font-size: 50px;
+        margin: 10px 0;
+        color: #50b7f5;
+      }
+
+      .hero-content h4 {
+        font-size: 22px;
+        margin: 20px 0;
+        color: #50b7f5;
+      }
+
+      .hero-content p {
+        font-size: 18px;
+        max-width: 600px;
+        margin: 0 auto;
+        line-height: 1.6;
+      }
+
+      .hero-video {
+        width: 90%;
+        max-width: 700px;
+        margin: 30px auto 0;
+        border-radius: 10px;
+        overflow: hidden;
+      }
+
+      @media screen and (min-width: 800px) {
+        .hero-section {
+          flex-direction: row;
+          text-align: left;
+          justify-content: space-between;
+        }
+
+        .hero-content {
+          flex: 1;
+          margin: 0;
+        }
+
+        .hero-video {
+          flex: 1;
+          margin: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div class="nav-container">
+        <div class="nav-logo">
+          <img
+            src="https://via.placeholder.com/55"
+            alt="Logo"
+          />
+        </div>
+
+        <div class="nav-links">
+          <a href="#">Home</a>
+          <a href="#">Services</a>
+          <a href="#">About</a>
+          <a href="#">Contact</a>
+        </div>
+
+        <button class="cta-btn">Sign In</button>
+
+        <span class="material-symbols-outlined menu-icon">menu</span>
+      </div>
+    </nav>
+
+    <main class="hero-section">
+      <div class="hero-content">
+        <h3>Welcome to</h3>
+        <h1>Your Card</h1>
+        <h4>Co-branded Card Issuers :</h4>
+        <img
+          src="https://via.placeholder.com/500x100"
+          alt="Sponsors"
+        />
+        <p>
+          The most innovative metal credit card in India. Powered by cutting-edge technology, grounded in simplicity and transparency, and giving you full control.
+        </p>
+      </div>
+      <div class="hero-video">
+        <iframe
+          width="600"
+          height="400"
+          src="https://media.istockphoto.com/id/1266309021/video/drone-shot-of-the-indian-tricolour-flag-fluttering-wide-shot.mp4?s=mp4-640x640-is&k=20&c=BmvaqTcm1W_RtAU3VwqaoKOKV27hqEUO-azfwskfQoE="
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </main>
+  </body>
+</html>

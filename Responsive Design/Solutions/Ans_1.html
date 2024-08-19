@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <title>Responsive Navbar</title>
+
+    <style>
+      body {
+        margin: 0;
+        font-family: "Trebuchet MS", Arial, sans-serif;
+        background-color: #f3f4f6;
+        color: #333;
+      }
+
+      nav {
+        background-color: #2d4654;
+        padding: 10px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .container {
+        width: 100%;
+        max-width: 1100px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .logo img {
+        width: 45px;
+        height: auto;
+      }
+
+      .nav-links {
+        display: flex;
+        gap: 30px;
+      }
+
+      .nav-links a {
+        color: #fff;
+        text-decoration: none;
+        font-weight: 500;
+        transition: color 0.3s, transform 0.3s;
+      }
+
+      .nav-links a:hover {
+        color: #5dade2;
+        transform: scale(1.1);
+      }
+
+      .cta-button {
+        background-color: #007acc;
+        color: #fff;
+        padding: 8px 20px;
+        border-radius: 5px;
+        border: none;
+        font-weight: bold;
+        transition: background-color 0.3s, transform 0.3s;
+        cursor: pointer;
+      }
+
+      .cta-button:hover {
+        background-color: #005f99;
+        transform: scale(1.1);
+      }
+
+      .menu-icon {
+        color: #fff;
+        font-size: 32px;
+        display: none;
+        cursor: pointer;
+      }
+
+      @media screen and (max-width: 800px) {
+        .nav-links {
+          display: none;
+        }
+
+        .menu-icon {
+          display: block;
+        }
+
+        .container {
+          justify-content: space-between;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div class="container">
+        <div class="logo">
+          <img
+            src="https://via.placeholder.com/45"
+            alt="Logo"
+          />
+        </div>
+
+        <div class="nav-links">
+          <a href="#">Home</a>
+          <a href="#">Blog</a>
+          <a href="#">Services</a>
+          <a href="#">Contact</a>
+        </div>
+
+        <button class="cta-button">Sign In</button>
+
+        <span class="material-symbols-outlined menu-icon">menu</span>
+      </div>
+    </nav>
+  </body>
+</html>

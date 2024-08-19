@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dynamic Footer</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background-color: #f0f2f5;
+        font-family: "Arial", sans-serif;
+      }
+
+      footer {
+        width: 100%;
+        background-color: #202225;
+        color: #b0b3b8;
+        padding: 40px 20px;
+      }
+
+      .footer-content {
+        max-width: 1200px;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+
+      .footer-section {
+        flex: 1;
+        padding: 10px;
+        min-width: 200px;
+      }
+
+      .footer-section h3 {
+        color: #fff;
+        font-size: 1.5rem;
+        margin-bottom: 15px;
+      }
+
+      .footer-section p,
+      .footer-section a {
+        font-size: 1rem;
+        line-height: 1.6;
+        color: #b0b3b8;
+        text-decoration: none;
+      }
+
+      .footer-section a:hover {
+        color: #3498db;
+      }
+
+      .footer-section ul {
+        list-style: none;
+        padding: 0;
+      }
+
+      .footer-section ul li {
+        margin-bottom: 10px;
+      }
+
+      .subscribe input,
+      .subscribe button {
+        width: 100%;
+        padding: 12px;
+        margin: 5px 0;
+        border-radius: 4px;
+        border: none;
+      }
+
+      .subscribe input {
+        background-color: #333;
+        color: #fff;
+      }
+
+      .subscribe button {
+        background-color: #3498db;
+        color: #fff;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+
+      .subscribe button:hover {
+        background-color: #2980b9;
+      }
+
+      @media screen and (max-width: 768px) {
+        .footer-content {
+          flex-direction: column;
+        }
+
+        .footer-section {
+          margin-bottom: 20px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <footer>
+      <div class="footer-content">
+        <div class="footer-section about">
+          <h3>FinCard</h3>
+          <p>
+            Discover the ultimate metal credit card tailored for the modern
+            individual. With cutting-edge technology and a focus on simplicity
+            and transparency, FinCard puts control back in your hands.
+          </p>
+        </div>
+        <div class="footer-section navigation">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="#">Dashboard</a></li>
+            <li><a href="#">Our Story</a></li>
+            <li><a href="#">Join Us</a></li>
+            <li><a href="#">Specials</a></li>
+          </ul>
+        </div>
+        <div class="footer-section support">
+          <h3>Help Center</h3>
+          <ul>
+            <li><a href="#">FAQs</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">User Agreement</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-section subscribe">
+          <h3>Stay Updated</h3>
+          <input type="email" placeholder="Enter your email" />
+          <button>Sign Up</button>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
